@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio For Physical Computing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="ideal" onclick="showideal()" class="animated fadeIn" style="animation-delay:2.2s;">ideal</a>
+    <a id="actual" onclick="showactual()" class="animated fadeIn" style="animation-delay:2.2s;">acutal</a>
+    <a id="reflection" onclick="showreflection()" class="animated fadeIn" style="animation-delay:2.2s;">reflection</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Yuexi XU.</h1>
+        <h2>Programmer / Presenter / Document Writer / Designer</h2>
+        <div id="menu">
+            <a onclick="showideal()">ideal concept</a>
+            <a onclick="showactual()">actual product</a>
+            <a onclick="showreflection()">reflection</a>
+        </div>
+    </div>
+    <div id="actual_container" class="container">
+        <div onclick="closeactual()"><i class="fas fa-angle-right"></i></div>
+        <h1>actual product.</h1>
+        <section>
+            <h2>actual title</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            </div>
+            <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button>
+        </section>
+    </div>
+    <div id="ideal_container" class="container">
+            <div onclick="closeideal()"><i class="fas fa-angle-left"></i></div>
+            <h1>ideal concept.</h1>
+            <section>
+                <h2>Problem Space</h2>
+                <p>
+                    With the fast-paced nature of current and future living, a growing number of 
+                    individuals are becoming aware of the need for daily exercise. Healthy behaviours, 
+                    on the other hand, may clash with certain possible outcomes. According to Jeff, 
+                    Monte, and Daniel in 2012, being healthy may need people sacrificing activities 
+                    that they like as a short-term consequence. We intend to design a product that 
+                    can motivate people and offer joyfulness to have them continuously exercise.
+                </p>
+                <p>
+                    Our team, Human Gambling eXtra Humbling, believes that our product, Jog Dealer, 
+                    can be a viable way to encourage individuals to engage in everyday workouts such 
+                    as jogging. As far as I concerned, and in accordance with the team's consistency, 
+                    Jog Dealer is an interactive gadget that provides information joggers may pay attention to.
+                </p>
+            </section>
+            <section>
+                <h2>Intended concept and experience</h2>
+                <p>
+                    Jog Dealer must be light and easy to wear and manoeuvre because it is a wearable gadget 
+                    for joggers. To demonstrate the concept at this time, we can only use a full-wire vest. 
+                    We could build the vest lighter without as many cables if we had infinite resources.
+                </p>
+                <p>
+                    Jog Dealer wants to give three experiences, according to our research: motivating, safe 
+                    and joyful for consumers during usage by the Jog Dealer. To be motivating, we propose to
+                     provide statistics like calories and speed; however, for the sake of privacy, Jog Dealer 
+                     will not display the actual figure, which will be available only to the user. All exhibited 
+                     data will be presented as holograms in front of the vest when the user wishes to inspect it, 
+                     for example, by placing his palm in front of the vest. We referenced the gestures cyclists 
+                     may use during cycling: turnings for joyfulness. In addition, for more convenient operation, 
+                     users may signal their turnings using a gesture or tilt control. Jog Dealer will also have 
+                     both audible and visual effects to notify joggers, which is a safety concern when jogging at night.
+                </p>
+            </section>
+        </div>
+          <div id="reflection_container" class="container">
+            <div onclick="closereflection()"><i class="fas fa-angle-down"></i></div>
+            <h1>reflection.</h1>
+            <section>
+                <h2>reflection</h2>
+                <p>
+                    
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            XYX <br>
+            <a href = "https://miro.com/app/board/o9J_lSmAWzk=/">JOURNAL</a><br>
+            <a href = #>PROJECT</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
